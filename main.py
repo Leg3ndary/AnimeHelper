@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import asyncio
-import os
 import json
+import os
 
 from colorama import Fore, Style
 
@@ -11,12 +11,15 @@ async def open_episode(episode: int) -> None:
     """
     Open an episode in the browser.
     """
-    os.system(f"chromium-browser https://animixplay.to/v1/naruto-shippuuden-dub/ep{episode}")
+    os.system(
+        f"chromium-browser https://animixplay.to/v1/naruto-shippuuden-dub/ep{episode}"
+    )
 
 
 async def main() -> None:
     """
-    Main function."""
+    Main function.
+    """
     print(f"{Fore.GREEN}Pulling latest from GitHub...{Style.RESET_ALL}")
     os.system("git pull")
     print(f"{Fore.GREEN}Pulled latest from GitHub!{Style.RESET_ALL}")
