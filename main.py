@@ -2,7 +2,6 @@
 
 import asyncio
 import os
-import sys
 import json
 
 from colorama import Fore, Style
@@ -39,7 +38,6 @@ async def main() -> None:
             json.dump({"episode": episode + 1}, file)
 
     asyncio.create_task(open_episode(episode))
-    sys.exit(0)
 
 
 if __name__ == "__main__":
