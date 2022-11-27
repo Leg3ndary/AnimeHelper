@@ -26,10 +26,6 @@ async def main() -> None:
     """
     Main function.
     """
-    print(f"{Fore.GREEN}Pulling latest from GitHub...{Style.RESET_ALL}")
-    os.system("git pull")
-    print(f"{Fore.GREEN}Pulled latest from GitHub!{Style.RESET_ALL}")
-
     print(f"{Fore.GREEN}Please Enter The Anime you want to Watch{Style.RESET_ALL}")
     for num, anime in enumerate(animes):
         print(f"{num} {anime}")
